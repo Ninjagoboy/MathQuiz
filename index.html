@@ -3,7 +3,7 @@
 <head>
 	<title>The Math Quiz Game!</title>
 <link rel="stylesheet" href="style.css">
-<script src="fabric.js"></script>
+
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -11,16 +11,30 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="quiz_game.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
-<script src="quiz_game_login.js"></script>
+<script src="Game_login.js"></script>
 </head>
 
-<body class="body_background" onload="load_img()">
+<body>
 	<center>
-		<h3 id="hd3">Player 1 login for the Game</h3>
-		<canvas width="1100" height="500" id="myCanvas"></canvas>
+		<h1>Math Quiz Game</h1>
+		<div class="col-lg-4 col-sm-8 col-xs-11 login_div">
+			<h3>Player 1 login for the Game</h3>
+			<label>User Name: </label>
+			<input type="text" id="Player1_input" class="form-control" placeholder="Player1 Name">
+			<br>
+		</div>
+		<div class="col-lg-4 col-sm-8 col-xs-11 login_div">
+			<h3>Player 2 login for the Game</h3>
+			<label>User Name: </label>
+			<input type="text" id="Player2_input" class="form-control" placeholder="Player2 Name">
+			<br>
+		</div>
+		<br>
+		<button style="width:30%" class="btn btn-primary" onclick="addUser()">Login</button>
+	
 	</center>
-	<script src="main.js"></script>
+
 </body>
 </html>
